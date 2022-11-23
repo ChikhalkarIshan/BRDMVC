@@ -1,0 +1,77 @@
+using System;
+using System.Linq;
+using AdditionalClasses;
+using Records.BRDMVS;
+namespace Customer_source
+{
+	public partial class Brdmvs
+	{
+		public StrField ReportLine = new StrField(133);
+		public StrField ApplctrlParameterRecord = new StrField(575);
+		public BeginWsType BeginWs = new BeginWsType();
+		public StrField CompilationDate = new StrField(20);
+		public MiscWsFieldsType MiscWsFields = new MiscWsFieldsType();
+		public HoldAccOutp1FieldsType HoldAccOutp1Fields = new HoldAccOutp1FieldsType();
+		public LongField HoldAdrPatNo = new LongField(12, true);
+		public StrField WsCurrTime = new StrField(26);
+		public CharField WsDemHoldFbillInd = new CharField(' ');
+		public CharField WsMgdCareDaysHold = new CharField(' ');
+		public IntField WsAccInsPlan1 = new IntField(5, true);
+		public IntField CommitCnt = new IntField(3, 0);
+		public CharField WsIcdVersInd = new CharField();
+		public CharField WsMbhHoldInd = new CharField(' ');
+		public IntField Pa1 = new IntField(4, +1, true);
+		public Ss99PanoTableType Ss99PanoTable = new Ss99PanoTableType();
+		public IntField PanoSs1Limit = new IntField(6, 01000);
+		public IntField Ss1 = new IntField(5, +1, true);
+		public IntField SsnoSs1 = new IntField(6, +1, true);
+		public IntField Csr2Ss = new IntField(4, +1, true);
+		public Csr1SsnoTableType Csr1SsnoTable = new Csr1SsnoTableType();
+		public IntField SsnoSs1Limit = new IntField(6, 50000);
+		public StoredCsr2LinesType StoredCsr2Lines = new StoredCsr2LinesType();
+		public MgdCareDaysTableType MgdCareDaysTable = new MgdCareDaysTableType();
+		public IntField OcdtCommLen = new IntField(4, +256, true);
+		public OcdtcommType Ocdtcomm = new OcdtcommType();
+		public StrField DateConverter = new StrField(8, "OCDTCONV");
+		public ProgramFlagsType ProgramFlags = new ProgramFlagsType();
+		public CountersAndTotalsType CountersAndTotals = new CountersAndTotalsType();
+		public StrField SubProg = new StrField(8);
+		public AsZoneProcessParametersType AsZoneProcessParameters = new AsZoneProcessParametersType();
+		public Filler67Type Filler67 = new Filler67Type();
+		public Filler90Type Filler90 = new Filler90Type();
+		public Filler94Type Filler94 = new Filler94Type();
+		public Filler99Type Filler99 = new Filler99Type();
+		public Filler104Type Filler104 = new Filler104Type();
+		public Filler108Type Filler108 = new Filler108Type();
+		public AsCorpCloseTableType AsCorpCloseTable = new AsCorpCloseTableType();
+		public WsZoneHospCtrlTblType WsZoneHospCtrlTbl = new WsZoneHospCtrlTblType();
+		public WsApplHospCtrlTblType WsApplHospCtrlTbl = new WsApplHospCtrlTblType();
+		public WsZn01ExtCtrlTblType WsZn01ExtCtrlTbl = new WsZn01ExtCtrlTblType();
+		public WsZn02ExtCtrlTblType WsZn02ExtCtrlTbl = new WsZn02ExtCtrlTblType();
+		public WsDc01PreliminaryTableType WsDc01PreliminaryTable = new WsDc01PreliminaryTableType();
+		public WsDc02FinalTableType WsDc02FinalTable = new WsDc02FinalTableType();
+		public Mvs1dayRptHead1Type Mvs1dayRptHead1 = new Mvs1dayRptHead1Type();
+		public Mvs1dayRptHead2Type Mvs1dayRptHead2 = new Mvs1dayRptHead2Type();
+		public Mvs1dayRptHead3aType Mvs1dayRptHead3a = new Mvs1dayRptHead3aType();
+		public Mvs1dayRptHead3Type Mvs1dayRptHead3 = new Mvs1dayRptHead3Type();
+		public Mvs1dayRptHead4Type Mvs1dayRptHead4 = new Mvs1dayRptHead4Type();
+		public Mvs1dayRptHead5Type Mvs1dayRptHead5 = new Mvs1dayRptHead5Type();
+		public Mvs1dayRptHead6Type Mvs1dayRptHead6 = new Mvs1dayRptHead6Type();
+		public DetlLine1Type DetlLine1 = new DetlLine1Type();
+		public DetlLine2Type DetlLine2 = new DetlLine2Type();
+		public DetlLine2_0Type DetlLine2_0 = new DetlLine2_0Type();
+		public NoDataLineType NoDataLine = new NoDataLineType();
+		public DashLineType DashLine = new DashLineType();
+		public TotalLine1Type TotalLine1 = new TotalLine1Type();
+		public SntSubunitTableType SntSubunitTable = new SntSubunitTableType();
+		public ErrorCodeType ErrorCode = new ErrorCodeType();
+		public StrField ErrorFileName = new StrField(8);
+		public StrField ErrorPgmName = new StrField(8);
+		public ErrorUnitNumTableType ErrorUnitNumTable = new ErrorUnitNumTableType();
+		public StrField ErrorVarText = new StrField(50);
+		public IntField ErrorCompletionCode = new IntField(3, true);
+		public EditErrorsType EditErrors = new EditErrorsType();
+		public HdrtrlParamsType HdrtrlParams = new HdrtrlParamsType();
+		public StrField RptId = new StrField(10, "COMPMVST01");
+	}
+}
